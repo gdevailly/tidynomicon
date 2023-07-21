@@ -576,7 +576,7 @@ infant_hiv %>%
   filter(hi <= (lo + 0.2)) %>%
   mutate(difference = hi - lo) %>%
   group_by(year) %>%
-  summarize(count = n(), ave_diff = mean(year))
+  summarize(count = n(), ave_diff = mean(difference))
 ```
 
 How might we do this with Pandas?
